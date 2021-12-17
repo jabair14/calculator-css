@@ -1,0 +1,82 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    background-color: gold;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row; 
+    /* ^means your flexing horizontally */
+    justify-content: center;
+    /* ^positions content along the main axis */
+    align-items: center;
+    /* column would be perpendicular axis; this moves up and down */
+
+    
+}
+
+.calculator {
+    width: 200px;
+    height: 300px;
+    background-color: maroon;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 12px;
+    box-sizing: border-box;
+    /* ^borderbox = tightly packed, contentbox = loosely packed  */
+}
+
+.calc_row {
+    /* background-color: green; */
+    height: 40px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.display {
+    background-color: black;
+}
+
+.button {
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    border-radius: 4px;
+    flex: 1;
+    /* represents the numerator based on the amount of something */
+    margin: 2px;
+}
+
+.long {
+    flex: 3;
+}
+
+.container1, .container2 {
+    border: 1px solid black;
+    height: 100vh;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.container1 {
+    flex: 1;
+    background-color: #999;
+}
+
+.container2 {
+    flex: 2;
+}
